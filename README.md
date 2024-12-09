@@ -41,5 +41,55 @@ $$
 y=mx+c
 $$
 
-We can then fit a linear model to give us the y intercept (\ln(N_0)) and the slope, r. This gives 
+We can then fit a linear model to give us the y intercept ($$\ln(N_0)$$) and the slope, $$r$$:
+
+-$r$ = 1.004e-2 = 0.01004
+- $\ln(N_0)$ = 6.883 $\quad\therefore\quad N_0 = e^{6.883}$ = 975.5486
+
+This allows us to model the exponential growth portion of the growth curve, however we still need to identify the value for carrying capacity ($k$)
+
+**Assumption 2: $N(t) = K$**
+
+-As time ($t$) approaches infinity, we assume the population size ($N$) reaches caryying capacity $k$. 
+
+```math
+\begin{equation}
+\lim\limits_{t \to \infty} N(t) = K
+\end{equation}
+```
+-Therefore, when t is large, we can represent the growth curve with the equation
+```math
+\begin{equation}
+ N(t) = K
+\end{equation}
+```
+-In this model, we use $t > 3000$ as at this point the curve has levelled off in the logistic growth curve.
+-The intercept of this linear model will represent the carrying capacity ($K$):
+- $$K = 6.000 \times 10^{10}$$
+ 
+### 3.  **Plot data and assess the fit of the model**
+
+The estimates we have derived from the linear approximations above can be used to create a logistic growth curve that should match the growth curve we saw in the raw data.
+
+![image](https://github.com/user-attachments/assets/18ec7494-35db-43d0-97af-8bb799e7512e)
+Figure 3 (growth data (black) and logistic growth model (red)
+
+We can see that the model fits the data well. 
+
+### 4  **Results**
+
+**i. Parameter Estimates:**
+
+Based on two linear models, we derived the key parameters for the logistic growth curve:
+
+- Initial population size ($N_0$) = $e^{6.888}$ = 975.5486
+- Growth rate is ($r) = 0.01004$
+- Carrying capacity ($K) = 6.000 \times 10^{10}$$
+
+**ii. Model Fit to the Data:**
+
+The logistic growth model was plotted with the growth data to assess how well it fits (figure 3).This growth data is from the  From this plot, we can see that model shows a close fit to the real data, indicating that the estimated parameters are appropritae to descibe the growth of the bacterial population.
+
+## Question 2: Predicting Population Size Under Exponential Growth
+
 

@@ -7,9 +7,9 @@ growth_data <- read.csv("experiment.csv")
 
 #Case 1. K >> N0, t is small
 
-#subset the data so that t<1250 and also log transform the y axis
+#subset the data so that t<1000 and also log transform the y axis
 
-data_subset1 <- growth_data %>% filter(t < 1250) %>% mutate(N_log = log(N)) 
+data_subset1 <- growth_data %>% filter(t < 1000) %>% mutate(N_log = log(N)) 
 
 #Fit a linear model to this subset of the data
 
@@ -23,7 +23,7 @@ summary(model1)
 
 # Subset the data again so that t>2250
 
-data_subset2 <- growth_data %>% filter(t > 2250)
+data_subset2 <- growth_data %>% filter(t > 3000)
 
 # Define the linear model with the assumption that N is constant around the carrying capacity (K)
 model2 <- lm(N ~ 1, data_subset2)

@@ -19,3 +19,4 @@ ggplot(aes(t,N), data = growth_data) +
   ylab("Population Size (N)") +
   scale_y_continuous(trans = 'log10') +
   theme_bw()
+

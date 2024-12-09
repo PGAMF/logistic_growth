@@ -43,7 +43,7 @@ $$
 
 We can then fit a linear model to give us the y intercept ($$\ln(N_0)$$) and the slope, $$r$$:
 
--$r$ = 1.004e-2 = 0.01004
+- $r$ = 1.004e-2 = 0.01004
 - $\ln(N_0)$ = 6.883 $\quad\therefore\quad N_0 = e^{6.883}$ = 975.5486
 
 This allows us to model the exponential growth portion of the growth curve, however we still need to identify the value for carrying capacity ($k$)
@@ -88,8 +88,56 @@ Based on two linear models, we derived the key parameters for the logistic growt
 
 **ii. Model Fit to the Data:**
 
-The logistic growth model was plotted with the growth data to assess how well it fits (figure 3).This growth data is from the  From this plot, we can see that model shows a close fit to the real data, indicating that the estimated parameters are appropritae to descibe the growth of the bacterial population.
+The logistic growth model was plotted with the growth data to assess how well it fits (figure 3).This growth data is from the csv "experiment.csv" (source: https://osf.io/gm2hq/files/osfstorage) From this plot, we can see that model shows a close fit to the real data, indicating that the estimated parameters are appropritae to descibe the growth of the bacterial population.
 
 ## Question 2: Predicting Population Size Under Exponential Growth
+
+The parameters estimated above can be used to calculate the population size at different times. In this case we will calculate the population size at 4980 mins, assuming exponential growth.
+
+Under exponential growth, the change in poulation size can be modelled by:
+
+ $$
+N(t) = N_0 e^{rt}
+$$
+
+based on the first linear model we created we have the estimates for gropwth rate ($r$) and intital population size ($N_0$):
+
+- $r$ = 0.1004
+- $N_0$ = 975.5486
+
+and $t$ = 4980 minutes. 
+
+We can substitute these values into the equation to give us
+
+$$N(t) = 975.5486 \times e^{0.01004 \times 4980} = 5.054 \times 10^{24}$$ 
+
+ **Comparison with logistic growth model**
+
+We can also estimate the population size at 4980 with a logistic growth model using the same parameter estimates.
+
+log growth equation:
+
+$$
+N(t) = \frac{K N_0 e^{rt}}{K - N_0 + N_0 e^{rt}}
+$$
+
+Log growth equation with parameters and t=4980
+
+$$
+N(t) = \frac{(6.000 \times 10^{10}) \times (e^{6.883}) \times (e^{0.01004 \times 4980})}{(6.000 \times 10^{10}) - (e^{6.888}) + (e^{6.883} \times e^{0.01004 \times 4980})} = 6.000 \times 10^{10} = K
+$$
+
+From the logstic growth model we can see that at 4980 minutes the population size has reached the poulation capacity $K$.
+
+## Question 3: comparing exponential and logistic growth curves ##
+
+Both models of growth were plotted, giving the figure below. (code in 
+
+
+
+
+
+
+
 
 

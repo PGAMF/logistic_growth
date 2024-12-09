@@ -5,7 +5,7 @@ R scripts for a reproducible analysis of logistic growth
 ## Question 1: Analysis
 ### 1.Plot the data
 
-When we plot the raw data from (experiment.csv) with x axis as time (t) in minutes and y axis as the number of cells (N), we see a classic sigmoidal curve produced. This curve plateaus as it approaches the carrying capacity (k).
+When we plot the raw data from (experiment.csv (source: https://osf.io/gm2hq/files/osfstorage)) with x axis as time (t) in minutes and y axis as the number of cells (N), we see a classic sigmoidal curve produced. This curve plateaus as it approaches the carrying capacity (k).
 
 ![image](https://github.com/user-attachments/assets/24b9ec6f-79fa-47d9-8a50-c6ad70701e6f)
 figure 1. Plot of raw data with linear scales
@@ -131,10 +131,11 @@ From the logstic growth model we can see that at 4980 minutes the population siz
 
 ## Question 3: comparing exponential and logistic growth curves ##
 
-Both models of growth were plotted, giving the figure below. (code in 
+Both models of growth were plotted, giving the figure below. (code in Model_comparison.R)
 
+![image](https://github.com/user-attachments/assets/49b32b0f-4790-468b-9670-90aa6f0b497f)
 
-
+figure 4: comparison of exponential (coral) and logistic (green) growth curves 
 
 
 

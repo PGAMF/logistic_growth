@@ -7,7 +7,7 @@ When we plot the raw data from (experiment.csv (source: https://osf.io/gm2hq/fil
 ![image](https://github.com/user-attachments/assets/24b9ec6f-79fa-47d9-8a50-c6ad70701e6f)
 figure 1. Plot of raw data with linear scales
 
-in order to interpret the growth more easily, we can log transform the y axis. This makes the exponential growth at the start of the curve linear. From this we see there is a linear increase in the growth rate until it levels off as sit appraoches the carrying capacity. 
+in order to interpret the growth more easily, we can log transform the y axis to make a semi-log plot. This makes the exponential growth at the start of the curve linear. From this we see there is a linear increase in the growth rate until it levels off as it appraoches the carrying capacity. 
 
 ![image](https://github.com/user-attachments/assets/5543b7c3-b451-48d0-a4b3-6bd888fc2671)
 figure 2. pLot of raw data with log scale in y axis
@@ -125,6 +125,7 @@ N(t) = \frac{(6.000 \times 10^{10}) \times (e^{6.883}) \times (e^{0.01004 \times
 $$
 
 From the logstic growth model we can see that at 4980 minutes the population size has reached the poulation capacity $K$.
+From these models we can see that the exponential growth model predicts a much larger population size after 4980 minutes. This iss because the exponential growth model does not account for resource limitation
 
 ## Question 3: comparing exponential and logistic growth curves ##
 
